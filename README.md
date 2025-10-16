@@ -23,7 +23,11 @@ This project uses **computer vision** to detect human body poses and automatical
 ├── PoseModule.py           # Handles pose detection & angle calculations  
 ├── PushUpCounter.py        # Push-up counter with form validation  
 ├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
-└── README.md               # Project documentation  
+└── README.md               # Project documentation
+
+--
+
+## How It Works
 
 ### PoseModule.py
 - Creates a custom `poseDetector` class using MediaPipe Pose
@@ -41,8 +45,7 @@ This project uses **computer vision** to detect human body poses and automatical
 - Counts curls when motion completes full range
 - Gives real-time form correction
 
-
-
+--
 
 🧱 Dependencies
 Tool	Purpose
