@@ -43,6 +43,7 @@ This project uses **computer vision** to detect human body poses and automatical
 
 
 
+
 🧱 Dependencies
 Tool	Purpose
 MediaPipe	Pose estimation and landmark detection
