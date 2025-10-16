@@ -1,4 +1,4 @@
-# 🏋️‍♂️ AI Fitness Tracker  
+# 🏋️‍♂️ AI Fitness Tracker
 **Real-time Pose Detection & Exercise Counter using OpenCV + MediaPipe**
 
 This project uses **computer vision** to detect human body poses and automatically count **push-ups** and **bicep curls** with live feedback on form and motion accuracy — all through your webcam or video file.
@@ -7,27 +7,25 @@ This project uses **computer vision** to detect human body poses and automatical
 
 ## 🚀 Features
 
-- 🤖 **Pose Detection** using [MediaPipe](https://google.github.io/mediapipe/)
-- 🧍 Tracks body landmarks (shoulder, elbow, hip, wrist)
-- 🧮 Counts **Push-ups** and **Bicep Curls** automatically
-- 📊 Displays progress bars & percentage completion
-- ⚡ Real-time feedback for incorrect form
-- 🎥 Works with both **webcam** and **video input**
+- Pose Detection using MediaPipe
+- Tracks body landmarks (shoulder, elbow, hip, wrist)
+- Counts Push-ups and Bicep Curls automatically
+- Displays progress bars & percentage completion
+- Real-time feedback for incorrect form
+- Works with both webcam and video input
 
 ---
 
 ## 🧩 Project Structure
+
 ```text
 📂 AI-Fitness-Tracker  
 ├── PoseModule.py           # Handles pose detection & angle calculations  
 ├── PushUpCounter.py        # Push-up counter with form validation  
 ├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
 └── README.md               # Project documentation  
-
-
 How It Works
 PoseModule.py
-
 Creates a custom poseDetector class using MediaPipe Pose
 
 Detects 33 human body landmarks
@@ -37,7 +35,6 @@ Calculates joint angles (elbow, shoulder, hip)
 Visualizes pose landmarks on video frames
 
 PushUpCounter.py
-
 Uses poseDetector to track arm and hip angles
 
 Counts push-ups based on full range of motion
@@ -45,21 +42,18 @@ Counts push-ups based on full range of motion
 Provides live feedback ("Up", "Down", "Fix Form")
 
 BicepCurlCounter.py
-
 Detects elbow flexion and extension
 
 Counts curls when motion completes full range
 
 Gives real-time form correction
 
-
 🧱 Dependencies
 Tool	Purpose
-🧠 MediaPipe	Pose estimation and landmark detection
-🎥 OpenCV	Frame capture and drawing
-🔢 NumPy	Math & interpolation calculations
-🧱 imutils	Image resizing utilities
-
+MediaPipe	Pose estimation and landmark detection
+OpenCV	Frame capture and drawing
+NumPy	Math & interpolation calculations
+imutils	Image resizing utilities
 
 To use a video file, modify the script like this:
 cap = cv2.VideoCapture("path_to_your_video.mp4")
