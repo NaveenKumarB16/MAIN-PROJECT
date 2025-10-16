@@ -22,53 +22,46 @@ This project uses **computer vision** to detect human body poses and automatical
 ├── PoseModule.py # Handles pose detection & angle calculations
 ├── PushUpCounter.py # Push-up counter with form validation
 ├── BicepCurlCounter.py # Bicep curl counter using arm angles
+├── requirements.txt # Project dependencies
 └── README.md # Project documentation
-
-
----
 
 ## 🧠 How It Works
 
-1. **PoseModule.py** – Creates a custom `poseDetector` class using MediaPipe Pose.  
-   - Detects 33 human body landmarks  
-   - Calculates joint angles (e.g., elbow, shoulder, hip)  
-   - Visualizes pose landmarks on frames  
+### 1️⃣ PoseModule.py
+- Creates a custom `poseDetector` class using **MediaPipe Pose**
+- Detects 33 human body landmarks  
+- Calculates joint angles (e.g., elbow, shoulder, hip)  
+- Visualizes pose landmarks on video frames  
 
-2. **PushUpCounter.py** –  
-   - Uses the `poseDetector` to track arm and hip angles  
-   - Counts push-ups based on full range of motion  
-   - Provides live feedback ("Up", "Down", "Fix Form")  
+### 2️⃣ PushUpCounter.py
+- Uses `poseDetector` to track arm and hip angles  
+- Counts push-ups based on the full range of motion  
+- Provides live feedback (“Up”, “Down”, “Fix Form”)  
 
-3. **BicepCurlCounter.py** –  
-   - Detects elbow flexion and extension  
-   - Counts curls when motion completes full range  
-   - Gives real-time form correction  
+### 3️⃣ BicepCurlCounter.py
+- Detects elbow flexion and extension  
+- Counts curls when motion completes the full range  
+- Gives real-time form correction  
 
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/AI-Fitness-Tracker.git
-cd AI-Fitness-Tracker
+🧱 Dependencies
+Tool	Purpose
+🧠 MediaPipe	Pose estimation and landmark detection
+🎥 OpenCV	Frame capture and drawing
+🔢 NumPy	Math & interpolation calculations
+🧱 imutils	Image resizing utilities
 
 
-| Tool         | Purpose                                |
-| ------------ | -------------------------------------- |
-| 🧠 MediaPipe | Pose estimation and landmark detection |
-| 🎥 OpenCV    | Frame capture and drawing              |
-| 🔢 NumPy     | Math & interpolation calculations      |
-| 🧱 imutils   | Image resizing utilities               |
+To use a video file, modify the script like this:
+cap = cv2.VideoCapture("path_to_your_video.mp4")
 
 🖼️ Example Output
 
 When you run the code:
+🧍 Your pose skeleton is drawn on the screen
+🔢 A counter at the bottom tracks your reps
+📊 A progress bar shows your motion range
+⚠️ Real-time form feedback appears on screen
 
-You’ll see your pose skeleton drawn on screen
-
-A counter at the bottom tracking your reps
-
-A progress bar showing your motion range
-
-Real-time form feedback on screen
+🙌 Author
+Naveen Kumar B
+Associate Software Developer
