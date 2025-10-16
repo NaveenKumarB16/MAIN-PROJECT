@@ -25,23 +25,24 @@ This project uses **computer vision** to detect human body poses and automatical
 └── README.md               # Project documentation  
 
 
-## 🧠 How It Works
+## How It Works
 
-### 1️⃣ PoseModule.py
-- Creates a custom `poseDetector` class using **MediaPipe Pose**
-- Detects 33 human body landmarks  
-- Calculates joint angles (e.g., elbow, shoulder, hip)  
-- Visualizes pose landmarks on video frames  
+### PoseModule.py
+- Creates a custom `poseDetector` class using MediaPipe Pose
+- Detects 33 human body landmarks
+- Calculates joint angles (elbow, shoulder, hip)
+- Visualizes pose landmarks on video frames
 
-### 2️⃣ PushUpCounter.py
-- Uses `poseDetector` to track arm and hip angles  
-- Counts push-ups based on the full range of motion  
-- Provides live feedback (“Up”, “Down”, “Fix Form”)  
+### PushUpCounter.py
+- Uses `poseDetector` to track arm and hip angles
+- Counts push-ups based on full range of motion
+- Provides live feedback ("Up", "Down", "Fix Form")
 
-### 3️⃣ BicepCurlCounter.py
-- Detects elbow flexion and extension  
-- Counts curls when motion completes the full range  
-- Gives real-time form correction  
+### BicepCurlCounter.py
+- Detects elbow flexion and extension
+- Counts curls when motion completes full range
+- Gives real-time form correction
+
 
 🧱 Dependencies
 Tool	Purpose
