@@ -22,7 +22,6 @@ This project uses **computer vision** to detect human body poses and automatical
 ├── PoseModule.py           # Handles pose detection & angle calculations  
 ├── PushUpCounter.py        # Push-up counter with form validation  
 ├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
-├── requirements.txt        # Project dependencies  
 └── README.md               # Project documentation  
 
 
