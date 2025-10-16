@@ -14,17 +14,6 @@ This project uses **computer vision** to detect human body poses and automatical
 - Real-time feedback for incorrect form
 - Works with both webcam and video input
 
----
-
-## 🧩 Project Structure
-
-```text
-📂 AI-Fitness-Tracker  
-├── PoseModule.py           # Handles pose detection & angle calculations  
-├── PushUpCounter.py        # Push-up counter with form validation  
-├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
-└── README.md               # Project documentation
-
 --
 
 ## How It Works
@@ -46,6 +35,18 @@ This project uses **computer vision** to detect human body poses and automatical
 - Gives real-time form correction
 
 --
+
+
+## 🧩 Project Structure
+
+```text
+📂 AI-Fitness-Tracker  
+├── PoseModule.py           # Handles pose detection & angle calculations  
+├── PushUpCounter.py        # Push-up counter with form validation  
+├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
+└── README.md               # Project documentation
+
+-- 
 
 🧱 Dependencies
 Tool	Purpose
