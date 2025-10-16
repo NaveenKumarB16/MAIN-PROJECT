@@ -3,8 +3,6 @@
 
 This project uses **computer vision** to detect human body poses and automatically count **push-ups** and **bicep curls** with live feedback on form and motion accuracy — all through your webcam or video file.
 
----
-
 ## 🚀 Features
 
 - Pose Detection using MediaPipe
@@ -13,8 +11,6 @@ This project uses **computer vision** to detect human body poses and automatical
 - Displays progress bars & percentage completion
 - Real-time feedback for incorrect form
 - Works with both webcam and video input
-
---
 
 ## How It Works
 
@@ -34,9 +30,6 @@ This project uses **computer vision** to detect human body poses and automatical
 - Counts curls when motion completes full range
 - Gives real-time form correction
 
---
-
-
 ## 🧩 Project Structure
 
 ```text
@@ -45,8 +38,6 @@ This project uses **computer vision** to detect human body poses and automatical
 ├── PushUpCounter.py        # Push-up counter with form validation  
 ├── BicepCurlCounter.py     # Bicep curl counter using arm angles  
 └── README.md               # Project documentation
-
--- 
 
 🧱 Dependencies
 Tool	Purpose
